@@ -20,6 +20,20 @@ Labeling criteria:
 Because MAL contains significantly more positive than negative reviews, manual sampling was performed to obtain a roughly balanced dataset.
 
 ## Data Preprocessing
+### Preprocessing Steps used:
+- Lowercasing: to make it all lower case
+- Regex Cleaning:
+    - remove special characters
+    - remove numbers
+    - remove symbols
+    - whitespace normalization
+    - standardizing formats.
+- Stopwords removal using TF- IDF vectorizer (English stopword list)
+- Tokenization and vocaublary creation: turning clean text into numerical feature vectors
+
+### Preprocessing steps not done:
+- Stemming or lemmatization was not applied because TF-IDF with raw tokens provided sufficent feature representation for this small dataset. 
+
 ## Feature Engineering
 ## Models
 ## Model Evaluation
