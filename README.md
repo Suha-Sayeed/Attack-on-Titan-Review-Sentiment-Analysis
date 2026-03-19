@@ -28,14 +28,26 @@ Because MAL contains significantly more positive than negative reviews, manual s
     - remove symbols
     - whitespace normalization
     - standardizing formats.
-- Stopwords removal using TF- IDF vectorizer (English stopword list)
 - Tokenization and vocaublary creation: turning clean text into numerical feature vectors
 
 ### Preprocessing steps not done:
 - Stemming or lemmatization was not applied because TF-IDF with raw tokens provided sufficent feature representation for this small dataset. 
 
 ## Feature Engineering
+Text data was converted into numerical features using TF-IDF (Term Frequency - Inverse Document Frequency) vectorization
+
+TF-IDF works by assigning higher weights to words that appear frequently in a specific review but rarely across all reviews. This makes distinctive words more meaningful compared to common words.
+
+Configuration used:
+- English stopwords removed during vectorization
+- No maximum feature limit set
+- Unigrams only
+
+This produced a sparse matrix where each review is represented as weighted vector.
+
 ## Models
+Two 
+
 ## Model Evaluation
 ## Sentiment Insights
 ## Error Analysis
