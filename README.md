@@ -46,10 +46,30 @@ Configuration used:
 This produced a sparse matrix where each review is represented as weighted vector.
 
 ## Models
-Two 
+Two classification models were trained and compared using 80/20 train-test split with stratification to preserve class balance
+
+**Logistic Regression**
+- max_inter = 1000 to ensure convergence
+- 5-fold cross validation used during developement (Average CV accuracy: 71%)
+
+**Naive Bayes**
+- MultinomialNB since it is well suited for text classification with TF-IDF features
+
+Both models were trained on the same vectorized features to allow for a direct comparison.
 
 ## Model Evaluation
+Both models were evaluated on the same 20-review test set using accuracy, precision, recall, and F1 - score.
+
+<img width="931" height="211" alt="image" src="https://github.com/user-attachments/assets/3d8a9010-379f-4117-9ffe-fa6b24647b6e" />
+
+As shown on the table, although Naive Bayes had a better precision score, Logistic Regression was the overall stronger performer. It identified 91% of the psotive reviews correctly and maintained a more balanced performance.
+
+Naive Bayes struggled significantly with negative reviews achieving only 11% recall recall for the negative class. It defaulted to predict positive majority of the time most likely because the negative review contain postive language as well. 
+
+For this particular dataset, Logistic Regression is recommended for this dataset. 
+
 ## Sentiment Insights
+
 ## Error Analysis
 ## Limitations
 ## Reproducibility
