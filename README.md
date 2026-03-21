@@ -78,6 +78,15 @@ The top predicted words were extracted by the Logistic Regression model's coeffi
 The most notable finding is the words like "good" and "liked" appeared as amongst the strongest predictors of negative reviews. This confirms that negative reviews frequently used positive language when discussing specific elements. This mixed sentiment made it harder for both models to correctly classify negative reviews. 
 
 ## Error Analysis
+**Logistic Regression: 5 misclassifications**
+4 out of 5 errors were negative reviews predicted as positive. These reviews engaged deeply with the show's plot using words like story, characters and world. The model associated these words with positive sentiment. The one misclassified positive review lacked the typical positive vocabulary the model learned to recognize.
+
+**Naive Bayes: 8 misclassifications**
+Every single error was a negative review predicted as positive. Naive Bayes misclassified 8 negative reviews compared to Logistic Regression's 4. This is consistent with the fact that mixed sentiment languages are pushing the model towards a positive prediction. 
+
+**Shared misclassifications**
+Reviews 14, 20, 22, and 42 were misclassified by both models. It suggests the reviews are ambiguous reviews where the language used makes it is diffcult for classification regardless of the model used.
 
 ## Limitations
+
 ## Reproducibility
