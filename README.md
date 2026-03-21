@@ -69,6 +69,11 @@ Naive Bayes struggled significantly with negative reviews achieving only 11% rec
 For this particular dataset, Logistic Regression is recommended for this dataset. 
 
 ## Sentiment Insights
+The top predicted words were extracted by the Logistic Regression model's coefficents.
+
+**Top words associated with positive reviews**: titans, episode, story, world, humanity, characters, action, epic, humans, love, best, walls
+
+**Top words associated with negative reviews**: okay, really, good, liked, boring, worst, bad, worldbuilding, terrible, awful, mess, ruined, annoying, premise
 
 ## Error Analysis
 ## Limitations
