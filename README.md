@@ -98,3 +98,13 @@ Each review was assigned one overall sentiment label based on the MAL score. How
 Reviews with scores 5-7 were excluded to avoid neutral sentiment.
 
 ## Reproducibility
+To reporduce this project
+1. Clone the Repository
+2. install the required libraries
+3. Open AOT_Sentiment_Analysis.ipynb in Google Colab or Jupyter Notebook
+4. Upload Suha - Data for AoT Sentiment Analysis.xlsx when prompted and run all cells in order
+
+**Required Enviornment:**
+- Python 3
+- Google Colab
+- Libraries: pandas, scikit-learn, matplotlib
