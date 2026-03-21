@@ -75,6 +75,9 @@ The top predicted words were extracted by the Logistic Regression model's coeffi
 
 **Top words associated with negative reviews**: okay, really, good, liked, boring, worst, bad, worldbuilding, terrible, awful, mess, ruined, annoying, premise
 
+The most notable finding is the words like "good" and "liked" appeared as amongst the strongest predictors of negative reviews. This confirms that negative reviews frequently used positive language when discussing specific elements. This mixed sentiment made it harder for both models to correctly classify negative reviews. 
+
 ## Error Analysis
+
 ## Limitations
 ## Reproducibility
