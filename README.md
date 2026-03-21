@@ -88,5 +88,13 @@ Every single error was a negative review predicted as positive. Naive Bayes misc
 Reviews 14, 20, 22, and 42 were misclassified by both models. It suggests the reviews are ambiguous reviews where the language used makes it is diffcult for classification regardless of the model used.
 
 ## Limitations
+**Small Dataset**
+Only 100 reviews were used due to data collection constraints. 
+
+**Single Sentiment Label**
+Each review was assigned one overall sentiment label based on the MAL score. However anime reviews frequently contains mixed opinions for example praising characters while criticising others. A single lable cannot capture this nauance which contributes to the misclassification observed in both models.
+
+**Binary Classification Only**
+Reviews with scores 5-7 were excluded to avoid neutral sentiment.
 
 ## Reproducibility
